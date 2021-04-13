@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #41295a, #2f0743);
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  height: 100vh;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+  background-color: rebeccapurple;
+  padding: 1rem;
+  border-style: hidden;
+  font-size: 18px;
+  color: white;
+}
+
+.user-form input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.user-form input:focus {
+  border-style: hidden;
+  background-color: rebeccapurple;
+  box-shadow: none;
+  color: white;
+}
+
+main .card {
+  background-color: rebeccapurple;
+  border-radius: 15px;
+  max-width: 800px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 10px solid #4f4f4f;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+
+.repo {
+  text-decoration: none;
+  color:#fff;
+  background-color:#212a72;
+  font-size: 0.7rem;
+  padding: .25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media(max-width: 700px) {
+  #main .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
+}
